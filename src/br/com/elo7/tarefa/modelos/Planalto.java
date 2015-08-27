@@ -1,28 +1,34 @@
 package br.com.elo7.tarefa.modelos;
 
+/**
+ * Classe representando o planalto de marte que será explorado penas sondas
+ * espaciais.
+ */
 public class Planalto {
 	
-	private PosicaoDaSonda coordenadaInferiorEsquerda;
-	private PosicaoDaSonda coordenadaSuperiorDireita;
+	private Coordenada coordenadaInferiorEsquerda;
+	private Coordenada coordenadaSuperiorDireita;
 	
+	public Planalto () {};
 	
-	public Planalto(PosicaoDaSonda coordenadaInferiorEsquerda, PosicaoDaSonda coordenadaSuperiorEsquerda) {
+	public Planalto(Coordenada coordenadaInferiorEsquerda,
+			Coordenada coordenadaSuperiorEsquerda) {
 		this.coordenadaInferiorEsquerda = coordenadaInferiorEsquerda;
 		this.coordenadaSuperiorDireita = coordenadaSuperiorEsquerda;
 	}
 	
-	public PosicaoDaSonda getCoordenadaSuperiorDireita() {
+	public Coordenada getCoordenadaSuperiorDireita() {
 		return coordenadaSuperiorDireita;
 	}
 	public void setCoordenadaSuperiorDireita(
-			PosicaoDaSonda coordenadaSuperiorDireita) {
+			Coordenada coordenadaSuperiorDireita) {
 		this.coordenadaSuperiorDireita = coordenadaSuperiorDireita;
 	}
-	public PosicaoDaSonda getCoordenadaInferiorEsquerda() {
+	public Coordenada getCoordenadaInferiorEsquerda() {
 		return coordenadaInferiorEsquerda;
 	}
 	public void setCoordenadaInferiorEsquerda(
-			PosicaoDaSonda coordenadaInferiorEsquerda) {
+			Coordenada coordenadaInferiorEsquerda) {
 		this.coordenadaInferiorEsquerda = coordenadaInferiorEsquerda;
 	}
 	
